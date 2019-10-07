@@ -21,7 +21,7 @@ Resources:
     Properties:
       GroupDescription: Allow SSH and TCP/3000 access
       SecurityGroupIngress:
-        - CidrIp: '0.0.0.0/0'
+        - CidrIp: 197.210.53.195/32
           FromPort: '22'
           IpProtocol: tcp
           ToPort: '22'
