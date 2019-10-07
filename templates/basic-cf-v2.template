@@ -21,7 +21,7 @@ Resources:
     Properties:
       GroupDescription: Allow SSH and TCP/3000 access
       SecurityGroupIngress:
-        - CidrIp: 105.112.56.124/32
+        - CidrIp: 197.210.53.108/32
           FromPort: '22'
           IpProtocol: tcp
           ToPort: '22'
@@ -32,7 +32,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
   instance:
     Properties:
-      ImageId: ami-0245d318c6788de52
+      ImageId: ami-0b69ea66ff7391e80
       InstanceType: t2.micro
       KeyName: !Ref 'KeyPair'
       SecurityGroups:
